@@ -1,0 +1,40 @@
+.comments{
+  flex-direction: column;
+}
+
+.comment-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: auto;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3% 1%;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+  width: 800px;
+  & .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  & pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    word-wrap: break-word;
+    width: 500px;
+    text-align: left;
+  }
+
+  & p {
+    text-align: center;
+  }
+
+  & img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+  }
+  & h3 {
+    display: inline-block;
+  }
+}

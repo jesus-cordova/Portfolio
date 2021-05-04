@@ -1,0 +1,43 @@
+.card {
+  background-color: #f8f1f1;
+  margin: 0 50px 10% 2%;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  & img {
+    width: 500px;
+    height: 320px;
+  }
+
+  & .first-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    color: black;
+  }
+  hr {
+    border: none;
+    background-color: black;
+    width: 100%;
+    height: 0.1px;
+  }
+  & .subject,
+  .author,
+  .preview-title {
+    padding-left: 2%;
+  }
+
+  & .datestamp {
+    padding-right: 2%;
+  }
+}

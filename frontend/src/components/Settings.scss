@@ -1,0 +1,32 @@
+.first-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: 5% 0 0 0;
+
+  & h1 {
+    color: gray;
+  }
+  & .info-first-col {
+    padding-bottom: 50%;
+  }
+  & .info-second-col {
+    padding-bottom: 50%;
+  }
+  & .first-col {
+    & label {
+      color: gray;
+    }
+    & p {
+      color: black;
+    }
+  }
+  & .second-col {
+    & label {
+      color: gray;
+    }
+    & p {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+p {
+  color: red;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  min-width: 600px;
+  background-color: black;
+  padding: 3% 2% 0 2%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-family: "Yusei Magic", sans-serif;
+  display: inline;
+  padding-right: 35px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.logo {
+  width: 200px;
+}
+.logo:hover {
+  transform: rotate(10deg);
+}
+.start {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+.end {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  width: 100%;
+
+  & .dropdown {
+    position: relative;
+    display: inline-block;
+
+    & .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      & a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    & .left-icon {
+      display: none;
+    }
+
+    & p {
+      font-family: "Yusei Magic", sans-serif;
+      color: white;
+      text-transform: uppercase;
+    }
+    &:hover > .dropdown-content {
+      display: block;
+    }
+    &:hover .drop-icon {
+      display: none;
+    }
+    &:hover .left-icon {
+      display: inline-block;
+    }
+  }
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-links a {
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.1s;
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  color: white;
+}

@@ -1,0 +1,74 @@
+.cards {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  margin: 5%;
+  height: 30rem;
+  width: 35rem;
+
+  &-side {
+    height: 30rem;
+    width: 35rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 100px;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    overflow: hidden;
+    &-front {
+      & img {
+        height: 30rem;
+        width: 35rem;
+      }
+    }
+    &-back {
+      display: flex;
+      flex-direction: column;
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #f6f6f6, #1e8a37);
+      text-align: center;
+      position: relative;
+
+      & p {
+        color: black;
+        line-height: 2rem;
+        margin: 0 2% 2%;
+        font-size: 20px;
+      }
+      & button {
+        background-color: white;
+        border-radius: 100px;
+        padding: 2% 5% 2% 5%;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        position: absolute;
+        transition: all 0.2s;
+        left: 38%;
+        top: 80%;
+        &:hover {
+          transform: scale(1.1);
+          background-color: black;
+          color: white;
+        }
+      }
+
+      & hr {
+        background-color: #e8e8e8;
+        border: none;
+        width: 70%;
+        height: 1px;
+      }
+    }
+  }
+
+  &:hover &-side-front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &-side-back {
+    transform: rotateY(0);
+  }
+}

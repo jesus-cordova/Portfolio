@@ -1,0 +1,62 @@
+$header-color: black;
+$project-section-color: #0d7377;
+
+html {
+  scroll-behavior: smooth;
+}
+.info-pic {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px; /* Half the height */
+  margin-left: -150px;
+  display: block;
+  border-radius: 50%;
+}
+marquee {
+  color: #11800d;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+}
+.info {
+  padding-top: 5%;
+  position: relative;
+  background-color: $header-color;
+  height: 450px;
+}
+.project-section {
+  margin: 5% 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bio h1 {
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+}
+.bio p {
+  color: white;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.overall-info {
+  background-color: black;
+  padding-bottom: 5%;
+}
+
+.footer {
+  padding: 7% 0 7%;
+  background-color: black;
+
+  & h1,
+  p {
+    text-align: center;
+    color: white;
+  }
+}

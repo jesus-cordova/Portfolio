@@ -1,0 +1,32 @@
+body {
+  background-color: #ece2e1;
+}
+
+.article-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.article {
+  text-align: center;
+  background-color: white;
+  padding: 5%;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  & p {
+    color: black;
+    text-align: center;
+  }
+  & img {
+    padding-top: 8%;
+    width: 800px;
+    height: 500px;
+  }
+
+  & .body-text {
+    text-align: left;
+    width: 800px;
+    line-height: 2rem;
+  }
+}
